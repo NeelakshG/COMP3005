@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Student Database CRUD Application
 
 youtube video link: https://www.youtube.com/watch?v=xyOMJ-MWOGw
@@ -47,9 +48,7 @@ Database Connection Configuration
 
 Inside PostgreSQLJDBCConnection.java, update these values to match your PostgreSQL setup
 
-The way this file does connection is, I make sure connection is done once properly and then continously use that connection rather than rewriting the connection code again and again for each method.
-
-look at the top of the java file to find this chunk of code
+This program creates one persistent connection to the PostgreSQL database and reuses it across all CRUD operations. This approach reduces redundancy and improves efficiency by avoiding repeated connection setup code.look at the top of the java file to find this chunk of code
     
     private static final String URL = "jdbc:postgresql://<HOST>:<PORT>/<DATABASE_NAME>";
     private static final String USER = "<USERNAME>";
@@ -71,3 +70,7 @@ Finally, Verify the CRUD operations
     4. deleteStudent() - deletes a student by a particular id
 
 
+=======
+# COMP3005
+Working on Database Assignments
+>>>>>>> f43741d5821e804fcc29be70bcf53ee3b3b3ddb7
